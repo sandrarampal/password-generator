@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #601700;
+  font-family: Roboto, sans-serif;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.option-div {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+}
+
+.generator {
+  background-color: #a76d60;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 1px 5px #481100;
+  font-size: 20px;
+}
+
+.password-div {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.password-div input {
+  height: 50px;
+  width: 400px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+}
+
+.password-div div {
+  display: flex;
+  align-items: center;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.length {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+}
+
+.length input {
+  font-size: 18px;
+  border-radius: 5px;
+  height: 30px;
+  width: 50px;
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 0.1rem;
+  border: 0.25rem solid #481100;
+  border-radius: 0.5rem;
+}
+
+.checkbox::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  clip-path: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%
+  );
+  transform: scale(0);
+  background-color: #481100;
+}
+
+.checkbox:checked::before {
+  transform: scale(1);
+}
+
+.checkbox:hover {
+  cursor: pointer;
+}
+
+button {
+  background-color: #601700;
+  color: #b5887e;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+span {
+  padding-left: 8px;
+}
