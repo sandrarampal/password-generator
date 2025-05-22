@@ -41,6 +41,7 @@ const PasswordGenerator = () => {
     }
 
     setPassword(newPassword);
+    setCopied(false);
   };
 
   const handleCopy = (e) => {
